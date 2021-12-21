@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#221F1E"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="WorldCinema"
+            android:textColor="#C5AFC8"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/cam" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_error"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:hint="E-mail"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_error"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:hint="Пароль"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/auth_button"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button3"
+        android:gravity="center"
+        android:text="Регистрация"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="#7D248C"
+        android:textSize="12sp" />
+</LinearLayout>

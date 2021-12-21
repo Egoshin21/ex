@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miTv"
+        android:title="Главное"
+        android:icon="@drawable/ic_tv"/>
+    <item
+        android:id="@+id/miFeed"
+        android:title="Подборка"
+        android:icon="@drawable/ic_dynamic_feed"/>
+    <item
+        android:id="@+id/miColl"
+        android:title="Коллекции"
+        android:icon="@drawable/ic__star"/>
+    <item
+        android:id="@+id/miPerm"
+        android:title="Профиль"
+        android:icon="@drawable/ic_perm"/>
+</menu>
